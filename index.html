@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>🎄 Merry Christmas 🎄</title>
+
+<style>
+    body {
+        background: #0b1d26;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    /* Cây thông */
+    .tree {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .layer {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: var(--size) solid transparent;
+        border-right: var(--size) solid transparent;
+        border-bottom: calc(var(--size) * 1.3) solid #1abc9c;
+    }
+
+    .layer:nth-child(1) { --size: 40px; top: 0; }
+    .layer:nth-child(2) { --size: 60px; top: 40px; }
+    .layer:nth-child(3) { --size: 80px; top: 90px; }
+    .layer:nth-child(4) { --size: 100px; top: 160px; }
+
+    .trunk {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 50px;
+        backg
